@@ -41,7 +41,7 @@ edit_time = 3
 async def _(event):
     if event.fwd_from:
         return
-    elif event.sender_id == OWNER_ID:
+    if event.sender_id == OWNER_ID:
         pass
     else:
         return
