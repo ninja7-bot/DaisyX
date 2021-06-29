@@ -41,8 +41,6 @@ edit_time = 3
 async def _(event):
     if event.fwd_from:
         return
-    if event.sender_id in SUDO_USERS:
-        pass
     elif event.sender_id == OWNER_ID:
         pass
     else:
